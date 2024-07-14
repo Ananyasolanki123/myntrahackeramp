@@ -1,0 +1,73 @@
+body {
+    font-family: Qwitcher Grypen;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 10px;
+}
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    margin-top: 10px;
+}
+#canvas {
+    grid-column: 1;
+    width: 100%;
+    max-width: 50px;
+    display: block; /* Hide initially */
+}
+#video {
+    grid-column: 1;
+    width: 100%;
+    max-width: 50px;
+}
+.captured-image {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    max-width: 500px;
+}
+.result {
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.view{
+    display: flex;
+    width:100px;
+    height:50px;
+}
+.dressupload{
+    display:flex;
+    width:100px;
+    height:100px;
+}
+body {
+    background-image: url('{{ url_for('static', filename='images/background.jpg') }}');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
